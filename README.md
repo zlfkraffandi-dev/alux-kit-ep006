@@ -10,11 +10,11 @@ Buka file **`EP006_Part1_BROLL_EDITOR.html`** di browser Chrome / Edge. Klik tom
 
 | Editor | Scene / Chapter | Cakupan |
 |---|---|---|
-| **REPI** | `S01` Cold Open, `S02` Ch 1, `S03` Ch 2 | 67 slot (34 Footage, 30 Graphic, 3 Archive) |
-| **SULTAN** | `S04` Ch 3, `S05` Ch 4, `S06` Ch 5 | 103 slot (61 Footage, 40 Graphic, 2 Archive) |
-| **AGIL** | `S07` Ch 6 *(sisa Ch 7–9 di Part 2)* | 19 slot (11 Footage, 7 Graphic, 1 Archive) |
+| **REPI** | `S01` Cold Open, `S02` Ch 1, `S03` Ch 2 | 67 baris (31 Footage, 33 Graphic, 3 Archive) |
+| **SULTAN** | `S04` Ch 3, `S05` Ch 4, `S06` Ch 5 | 103 baris (58 Footage, 42 Graphic, 3 Archive) |
+| **AGIL** | `S07` Ch 6 *(S08–S09 menyusul di Part 2)* | 19 baris (11 Footage, 8 Graphic, 0 Archive) |
 
-*Catatan: Zulfikar akan mulai di Batch Part 2 (Chapter 9–11).*
+*Catatan: Part 2 (S08–S13) menyusul setelah audio dan SRT-nya jadi, dengan file HTML terpisah. Total Part 1: 189 baris = 100 Footage + 83 Graphic + 6 Archive.*
 
 ---
 
@@ -24,17 +24,17 @@ Setiap baris di HTML dan timeline Premiere ditandai dengan garis warna & badge:
 
 1. <span style="color:#10b981;font-weight:bold;">[FOOTAGE]</span> (Kode `B001` s/d `B100` | Garis Hijau)
    * **Sumber:** Stock video komersial dari **Envato Elements**.
-   * **Tujuan Timeline:** Masuk ke track **`V1`** (di bawah marking `V4`).
+   * **Tujuan Timeline:** Marking di track **`V4`**. Letakkan klip hasil download tepat di bawah marking (lihat Bagian 4).
    * **Cara:** Klik tombol **Cari** di HTML untuk langsung membuka hasil pencarian Envato, atau klik **Copy** untuk menyalin keyword.
 
 2. <span style="color:#6366f1;font-weight:bold;">[GRAPHIC]</span> (Kode `EP006-001` s/d `083` | Garis Ungu)
    * **Sumber:** Desain dari **Figma**, render **MOGRT**, atau animasi peta **GeoLayers 3** (After Effects).
-   * **Tujuan Timeline:** Masuk ke track **`V3`** (di bawah marking `V6`).
+   * **Tujuan Timeline:** Marking di track **`V6`**. Grafis dirender dari Figma/GeoLayers, bukan dicari di stock.
    * **Cara:** Cek kolom *Konteks & arahan visual*. Jika bertanda `GeoLayers 3`, siapkan animasi peta sesuai koordinat GPS yang tertera. Jika ada link artikel berita (BBC/CNN), klik link untuk referensi screenshot koran/web.
 
 3. <span style="color:#f59e0b;font-weight:bold;">[ARCHIVE]</span> (Kode `A001` s/d `A006` | Garis Kuning)
    * **Sumber:** Dokumen sejarah, foto arsip, cuplikan berita lama, atau Wikimedia Commons.
-   * **Tujuan Timeline:** Masuk ke track **`V2`** (di bawah marking `V5`).
+   * **Tujuan Timeline:** Marking di track **`V5`**. Letakkan arsip tepat di bawah marking (lihat Bagian 4).
    * **Cara:** Lihat keterangan di kolom *Sumber/Aset* (misal: *National Geographic*, *History.com*, *USDA History*), cari footage/foto arsip yang relevan.
 
 ---
@@ -51,27 +51,23 @@ Setiap baris di HTML dan timeline Premiere ditandai dengan garis warna & badge:
 
 ## 4. Aturan Penempatan di Adobe Premiere Pro
 
-Susunan Track di Sequence:
+Marking sudah terpasang di sequence (A1/A2 voice over terkunci, jangan diubah):
 ```text
-[V8] CHAPTER                <- Penanda nama babak (jangan digeser)
-[V6] ADJUSTMENT GRAPHIC     <- Marking durasi grafis
-[V5] ADJUSTMENT ARCHIVE     <- Marking durasi arsip
-[V4] ADJUSTMENT ENVATO      <- Marking durasi footage stock
--------------------------------------------------------------------
-[V3] (Tempat Aset Grafis)   <- Letakkan render grafis / MOGRT di sini
-[V2] (Tempat Arsip)         <- Letakkan video / foto arsip di sini
-[V1] (Tempat Footage)       <- Letakkan stock video Envato di sini
--------------------------------------------------------------------
-[A1 / A2] VOICE OVER        <- TERKUNCI (LOCKED) - JANGAN DIUBAH
+[V8] CHAPTER             <- penanda babak, jangan digeser
+[V6] marking GRAPHIC     <- durasi grafis (EP006-001 dst)
+[V5] marking ARCHIVE     <- durasi arsip (A001-A006)
+[V4] marking FOOTAGE     <- durasi stock Envato (B001-B100)
+[A1/A2] VOICE OVER       <- TERKUNCI
 ```
+Letakkan klip hasil download di track kosong di bawah marking. Susunan track pastinya ikuti arahan Zulfikar di sequence master.
 
 ### Aturan Wajib Editing:
 1. **Snap Sesuai Marking:**
    * Aktifkan tombol **Snap (`S`)** di timeline Premiere.
-   * Panjang klip di `V1` atau `V2` harus pas dari awal sampai akhir batas adjustment layer di atasnya (`V4` atau `V5`). Jangan ada gap / lubang hitam.
+   * Panjang klip harus pas dari awal sampai akhir batas marking (`V4`/`V5`). Jangan ada gap / lubang hitam.
 2. **Zero Vertical Stacking (Dilarang Menumpuk):**
-   * Di titik waktu yang ada `GRAPHIC` (`V6`), di bawahnya (`V1`/`V2`) **TIDAK BOLEH** ada footage atau arsip, KECUALI jika arahan grafisnya transparan dan meminta latar gelap/subtle background.
-   * Begitu pula antara `V1` dan `V2`: jika slot arsip aktif, track footage kosong.
+   * Pada satu waktu hanya ada satu jenis aset. Marking tidak saling tumpang tindih: slot GRAPHIC berarti tidak ada footage atau arsip di waktu itu, begitu juga sebaliknya.
+   * Jangan menaruh klip di durasi marking milik kategori lain.
 3. **Scale to Frame:**
    * Sequence berukuran **3840×2160 (4K UHD)**.
    * Footage 1080p wajib di-scale **200%** (atau klik kanan -> *Set to Frame Size*) agar menutupi frame penuh (tidak ada border hitam).

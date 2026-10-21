@@ -20,9 +20,9 @@ TUGAS UTAMAMU:
    - Track V6 (GRAPHIC): Beritahu jika ada arahan khusus seperti GeoLayers 3 (beserta koordinat GPS) atau Full Article URL.
    - Track V5 (ARCHIVE): Cari sumber dokumen sejarah / foto arsip autentik.
 4. Pastikan aturan editing dipatuhi:
-   - ZERO VERTICAL STACKING: Dilarang menumpuk klip footage di bawah grafis V6 (kecuali grafis transparan).
+   - ZERO VERTICAL STACKING: satu waktu hanya satu jenis aset. Marking tidak overlap; di slot GRAPHIC tidak boleh ada footage atau arsip.
    - Resolusi sequence 4K (3840x2160): footage 1080p wajib di-scale 200%.
-   - In/Out point klip V1/V2 harus snap presisi sesuai adjustment layer di V4/V5.
+   - In/Out klip harus snap presisi ke batas marking (V4 footage, V5 arsip), tanpa gap.
 
-Mulai dengan mengecek folder repo dan laporkan total slot yang harus kukerjakan!
+Mulai dengan mengecek folder repo dan laporkan total baris yang harus kukerjakan (REPI 67, SULTAN 103, AGIL 19).
 ```
