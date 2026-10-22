@@ -11,25 +11,26 @@ Struktur timeline dan dashboard cue sheet baru saja diperbarui oleh Zulfikar (Le
 1. Dashboard Cue Sheet Online:
    - URL: https://zlfkraffandi-dev.github.io/alux-kit-ep006/
    - Repo: https://github.com/zlfkraffandi-dev/alux-kit-ep006.git
-2. Update Struktur Track Timeline Premiere Pro:
-   - [V11] LOGO PLACEMENT VIDEO (Watermark)
-   - [V9]  SOURCE (Master footage)
-   - [V8]  CHAPTER (Penanda babak)
-   - [V7]  MARKING GEOLAYER -> Penanda durasi animasi peta 3D GeoLayers 3 AE (nama: geo3 · EP006-### · Lokasi)
-   - [V6]  MARKING GRAPHIC  -> Penanda durasi motion graphic Figma / MOGRT (nama: EP006-### · Title)
-   - [V5]  MARKING ARCHIEVE -> Penanda durasi foto / video arsip sejarah (kode: A001 s/d A006)
-   - [V4]  MARKING ENVATO   -> Penanda durasi stock video Envato (kode: B001 s/d B100)
+2. Update Struktur Track Timeline Premiere Pro (Master 12 Track):
+   - [V12] Video 12         -> LOGO PLACEMENT VIDEO.png (Watermark)
+   - [V10] SOURCE           -> Master footage / talking head
+   - [V9]  CHAPTER          -> Penanda babak (jangan digeser)
+   - [V8]  MARKING GEOLAYER -> Penanda durasi animasi peta 3D GeoLayers 3 AE (nama: geo3 · EP006-### · Lokasi)
+   - [V7]  MARKING GRAPHIC  -> Penanda durasi motion graphic Figma / MOGRT (nama: EP006-### · Title)
+   - [V6]  MARKING ARCHIEVE -> Penanda durasi foto / video arsip sejarah (kode: A001 s/d A006)
+   - [V5]  MARKING ENVATO   -> Penanda durasi stock video Envato (kode: B001 s/d B100)
    -------------------------------------------------------------------
-   - [V3]  GRAPHIC          -> Tempat meletakkan render grafis / MOGRT / peta
+   - [V4]  GEOLAYER         -> Tempat meletakkan render animasi peta GeoLayers 3
+   - [V3]  GRAPHIC          -> Tempat meletakkan render grafis / MOGRT
    - [V2]  ARCHIEVE         -> Tempat meletakkan foto / video arsip
    - [V1]  B-ROLL           -> Tempat meletakkan stock video Envato
    -------------------------------------------------------------------
    - [A1]  VOICE OVER       -> MASTER TERKUNCI (JANGAN DIUBAH)
 
 3. Update Alokasi Tugas & Total Baris Cue Sheet (Total 198 baris):
-   - REPI:   72 baris (31 Footage, 3 Archive, 33 Graphic, 5 GeoLayer) -> S01 Cold Open, S02 Ch 1, S03 Ch 2
-   - SULTAN: 107 baris (58 Footage, 3 Archive, 42 Graphic, 4 GeoLayer) -> S04 Ch 3, S05 Ch 4, S06 Ch 5
-   - AGIL:   19 baris (11 Footage, 0 Archive, 8 Graphic, 0 GeoLayer)   -> S07 Ch 6
+   - REPI:   72 baris (31 Footage V5, 3 Archive V6, 33 Graphic V7, 5 GeoLayer V8) -> S01 Cold Open, S02 Ch 1, S03 Ch 2
+   - SULTAN: 107 baris (58 Footage V5, 3 Archive V6, 42 Graphic V7, 4 GeoLayer V8) -> S04 Ch 3, S05 Ch 4, S06 Ch 5
+   - AGIL:   19 baris (11 Footage V5, 0 Archive V6, 8 Graphic V7, 0 GeoLayer V8)   -> S07 Ch 6
 
 TUGAS UTAMAMU SEBAGAI ASISTENKU:
 1. Update / clone repo lokal jika ada:

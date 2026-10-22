@@ -14,7 +14,7 @@ Buka file **`EP006_Part1_BROLL_EDITOR.html`** di browser Chrome / Edge. Klik tom
 | **SULTAN** | `S04` Ch 3, `S05` Ch 4, `S06` Ch 5 | 107 baris (58 Footage, 3 Archive, 42 Graphic, 4 GeoLayer) |
 | **AGIL** | `S07` Ch 6 *(S08–S09 menyusul di Part 2)* | 19 baris (11 Footage, 0 Archive, 8 Graphic, 0 GeoLayer) |
 
-*Catatan: Part 2 (S08–S13) menyusul setelah audio dan SRT-nya jadi, dengan file HTML terpisah. Total Part 1: 198 baris = 100 Footage (V4) + 6 Archive (V5) + 83 Graphic (V6) + 9 GeoLayer (V7).*
+*Catatan: Part 2 (S08–S13) menyusul setelah audio dan SRT-nya jadi, dengan file HTML terpisah. Total Part 1: 198 baris = 100 Footage (V5) + 6 Archive (V6) + 83 Graphic (V7) + 9 GeoLayer (V8).*
 
 ---
 
@@ -24,22 +24,22 @@ Setiap baris di HTML dan timeline Premiere ditandai dengan garis warna & badge:
 
 1. <span style="color:#10b981;font-weight:bold;">[FOOTAGE]</span> (Kode `B001` s/d `B100` | Garis Hijau)
    * **Sumber:** Stock video komersial dari **Envato Elements**.
-   * **Tujuan Timeline:** Marking di track **`V4`**. Letakkan klip hasil download tepat di bawah marking (lihat Bagian 4).
+   * **Tujuan Timeline:** Marking di track **`V5`** (Konten diletakkan di track **`V1` B-ROLL**). Letakkan klip hasil download tepat di bawah marking (lihat Bagian 4).
    * **Cara:** Klik tombol **Cari** di HTML untuk langsung membuka hasil pencarian Envato, atau klik **Copy** untuk menyalin keyword.
 
 2. <span style="color:#6366f1;font-weight:bold;">[GRAPHIC]</span> (Kode `EP006-001` s/d `083` | Garis Ungu)
-   * **Sumber:** Desain dari **Figma**, render **MOGRT**, atau animasi peta **GeoLayers 3** (After Effects).
-   * **Tujuan Timeline:** Marking di track **`V6`**. Grafis dirender dari Figma/GeoLayers, bukan dicari di stock.
+   * **Sumber:** Desain dari **Figma**, render **MOGRT** (After Effects).
+   * **Tujuan Timeline:** Marking di track **`V7`** (Konten diletakkan di track **`V3` GRAPHIC**). Grafis dirender dari Figma/GeoLayers, bukan dicari di stock.
    * **Cara:** Cek kolom *Konteks & arahan visual*. Jika bertanda `GeoLayers 3`, siapkan animasi peta sesuai koordinat GPS yang tertera. Jika ada link artikel berita (BBC/CNN), klik link untuk referensi screenshot koran/web.
 
 3. <span style="color:#f59e0b;font-weight:bold;">[ARCHIVE]</span> (Kode `A001` s/d `A006` | Garis Kuning)
    * **Sumber:** Dokumen sejarah, foto arsip, cuplikan berita lama, atau Wikimedia Commons.
-   * **Tujuan Timeline:** Marking di track **`V5`**. Letakkan arsip tepat di bawah marking (lihat Bagian 4).
+   * **Tujuan Timeline:** Marking di track **`V6`** (Konten diletakkan di track **`V2` ARCHIEVE**). Letakkan arsip tepat di bawah marking (lihat Bagian 4).
    * **Cara:** Lihat keterangan di kolom *Sumber/Aset* (misal: *National Geographic*, *History.com*, *USDA History*), cari footage/foto arsip yang relevan.
 
-4. <span style="color:#06b6d4;font-weight:bold;">[GEOLAYER]</span> (Track **`V7`**)
+4. <span style="color:#06b6d4;font-weight:bold;">[GEOLAYER]</span> (Track **`V8`**)
    * **Sumber:** Animasi peta 3D After Effects via plugin **GeoLayers 3**.
-   * **Tujuan Timeline:** Marking penanda durasi di track **`V7`**.
+   * **Tujuan Timeline:** Marking penanda durasi di track **`V8`** (Konten diletakkan di track **`V4` GEOLAYER**).
    * **Cara:** Cek arahan di kolom *Konteks & arahan visual* file HTML. Wajib input koordinat Latitude & Longitude (bukan nama kota) serta ikuti setup zoom & pitch kamera AE yang tertera.
 
 ---
@@ -57,23 +57,24 @@ Setiap baris di HTML dan timeline Premiere ditandai dengan garis warna & badge:
 ## 4. Aturan Penempatan di Adobe Premiere Pro
 
 Marking sudah terpasang di sequence (A1/A2 voice over terkunci, jangan diubah):
-Struktur Track Sequence Premiere Pro (Update Master):
+Struktur Track Sequence Premiere Pro (Update Master 12 Track):
 ```text
-[V11] LOGO PLACEMENT VIDEO     <- Watermark branding (terkunci)
-[V9]  SOURCE                   <- Master footage / talking head
-[V8]  CHAPTER                  <- Penanda babak (jangan digeser)
-[V7]  MARKING GEOLAYER         <- Durasi animasi peta GeoLayers 3 (After Effects)
-[V6]  MARKING GRAPHIC          <- Durasi motion graphic Figma / MOGRT
-[V5]  MARKING ARCHIEVE         <- Durasi foto / dokumen arsip sejarah
-[V4]  MARKING ENVATO           <- Durasi footage stock Envato Elements
+[V12] Video 12                 <- LOGO PLACEMENT VIDEO.png (Watermark branding)
+[V10] SOURCE                   <- Master footage / talking head
+[V9]  CHAPTER                  <- Penanda babak (jangan digeser)
+[V8]  MARKING GEOLAYER         <- Penanda durasi animasi peta GeoLayers 3 (After Effects)
+[V7]  MARKING GRAPHIC          <- Penanda durasi motion graphic Figma / MOGRT
+[V6]  MARKING ARCHIEVE         <- Penanda durasi foto / dokumen arsip sejarah
+[V5]  MARKING ENVATO           <- Penanda durasi stock video Envato Elements
 -------------------------------------------------------------------
-[V3]  GRAPHIC                  <- Tempat meletakkan render grafis / MOGRT
-[V2]  ARCHIEVE                 <- Tempat meletakkan foto / video arsip
-[V1]  B-ROLL                   <- Tempat meletakkan stock video Envato
+[V4]  GEOLAYER                 <- Tempat meletakkan render animasi peta GeoLayers 3
+[V3]  GRAPHIC                  <- Tempat meletakkan render motion graphic Figma / MOGRT
+[V2]  ARCHIEVE                 <- Tempat meletakkan foto / video arsip sejarah
+[V1]  B-ROLL                   <- Tempat meletakkan stock video Envato Elements
 -------------------------------------------------------------------
-[A1 / A2] VOICE OVER           <- TERKUNCI (LOCKED) - JANGAN DIUBAH
+[A1]  VOICE OVER               <- TERKUNCI (MASTER VO - JANGAN DIUBAH)
 ```
-Letakkan klip hasil download dan render pada layer konten (V1 B-Roll, V2 Archieve, V3 Graphic) tepat di bawah batas marking masing-masing.
+Letakkan klip hasil download dan render pada layer konten (V1 B-Roll, V2 Archieve, V3 Graphic, V4 Geolayer) tepat di bawah batas marking masing-masing (V5 Envato, V6 Archieve, V7 Graphic, V8 Geolayer).
 
 ### Aturan Wajib Editing:
 1. **Snap Sesuai Marking:**
