@@ -10,11 +10,11 @@ Buka file **`EP006_Part1_BROLL_EDITOR.html`** di browser Chrome / Edge. Klik tom
 
 | Editor | Scene / Chapter | Cakupan |
 |---|---|---|
-| **REPI** | `S01` Cold Open, `S02` Ch 1, `S03` Ch 2 | 67 baris (31 Footage, 28 Graphic, 3 Archive, 5 GeoLayer) |
-| **SULTAN** | `S04` Ch 3, `S05` Ch 4, `S06` Ch 5 | 103 baris (58 Footage, 38 Graphic, 3 Archive, 4 GeoLayer) |
-| **AGIL** | `S07` Ch 6 *(S08–S09 menyusul di Part 2)* | 19 baris (11 Footage, 8 Graphic, 0 Archive, 0 GeoLayer) |
+| **REPI** | `S01` Cold Open, `S02` Ch 1, `S03` Ch 2 | 72 baris (31 Footage, 3 Archive, 33 Graphic, 5 GeoLayer) |
+| **SULTAN** | `S04` Ch 3, `S05` Ch 4, `S06` Ch 5 | 107 baris (58 Footage, 3 Archive, 42 Graphic, 4 GeoLayer) |
+| **AGIL** | `S07` Ch 6 *(S08–S09 menyusul di Part 2)* | 19 baris (11 Footage, 0 Archive, 8 Graphic, 0 GeoLayer) |
 
-*Catatan: Part 2 (S08–S13) menyusul setelah audio dan SRT-nya jadi, dengan file HTML terpisah. Total Part 1: 189 baris = 100 Footage (V4) + 6 Archive (V5) + 74 Graphic (V6) + 9 GeoLayer (V7).*
+*Catatan: Part 2 (S08–S13) menyusul setelah audio dan SRT-nya jadi, dengan file HTML terpisah. Total Part 1: 198 baris = 100 Footage (V4) + 6 Archive (V5) + 83 Graphic (V6) + 9 GeoLayer (V7).*
 
 ---
 

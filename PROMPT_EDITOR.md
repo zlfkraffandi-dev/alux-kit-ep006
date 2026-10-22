@@ -24,5 +24,5 @@ TUGAS UTAMAMU:
    - Resolusi sequence 4K (3840x2160): footage 1080p wajib di-scale 200%.
    - In/Out klip harus snap presisi ke batas marking (V4 footage, V5 arsip), tanpa gap.
 
-Mulai dengan mengecek folder repo dan laporkan total baris yang harus kukerjakan (REPI 67, SULTAN 103, AGIL 19).
+Mulai dengan mengecek folder repo dan laporkan total baris yang harus kukerjakan (REPI 72, SULTAN 107, AGIL 19).
 ```
