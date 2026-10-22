@@ -37,6 +37,11 @@ Setiap baris di HTML dan timeline Premiere ditandai dengan garis warna & badge:
    * **Tujuan Timeline:** Marking di track **`V5`**. Letakkan arsip tepat di bawah marking (lihat Bagian 4).
    * **Cara:** Lihat keterangan di kolom *Sumber/Aset* (misal: *National Geographic*, *History.com*, *USDA History*), cari footage/foto arsip yang relevan.
 
+4. <span style="color:#06b6d4;font-weight:bold;">[GEOLAYER]</span> (Track **`V7`**)
+   * **Sumber:** Animasi peta 3D After Effects via plugin **GeoLayers 3**.
+   * **Tujuan Timeline:** Marking penanda durasi di track **`V7`**.
+   * **Cara:** Cek arahan di kolom *Konteks & arahan visual* file HTML. Wajib input koordinat Latitude & Longitude (bukan nama kota) serta ikuti setup zoom & pitch kamera AE yang tertera.
+
 ---
 
 ## 3. Standar Unduh (Download Rules)
@@ -52,14 +57,23 @@ Setiap baris di HTML dan timeline Premiere ditandai dengan garis warna & badge:
 ## 4. Aturan Penempatan di Adobe Premiere Pro
 
 Marking sudah terpasang di sequence (A1/A2 voice over terkunci, jangan diubah):
+Struktur Track Sequence Premiere Pro (Update Master):
 ```text
-[V8] CHAPTER             <- penanda babak, jangan digeser
-[V6] marking GRAPHIC     <- durasi grafis (EP006-001 dst)
-[V5] marking ARCHIVE     <- durasi arsip (A001-A006)
-[V4] marking FOOTAGE     <- durasi stock Envato (B001-B100)
-[A1/A2] VOICE OVER       <- TERKUNCI
+[V11] LOGO PLACEMENT VIDEO     <- Watermark branding (terkunci)
+[V9]  SOURCE                   <- Master footage / talking head
+[V8]  CHAPTER                  <- Penanda babak (jangan digeser)
+[V7]  MARKING GEOLAYER         <- Durasi animasi peta GeoLayers 3 (After Effects)
+[V6]  MARKING GRAPHIC          <- Durasi motion graphic Figma / MOGRT
+[V5]  MARKING ARCHIEVE         <- Durasi foto / dokumen arsip sejarah
+[V4]  MARKING ENVATO           <- Durasi footage stock Envato Elements
+-------------------------------------------------------------------
+[V3]  GRAPHIC                  <- Tempat meletakkan render grafis / MOGRT
+[V2]  ARCHIEVE                 <- Tempat meletakkan foto / video arsip
+[V1]  B-ROLL                   <- Tempat meletakkan stock video Envato
+-------------------------------------------------------------------
+[A1 / A2] VOICE OVER           <- TERKUNCI (LOCKED) - JANGAN DIUBAH
 ```
-Letakkan klip hasil download di track kosong di bawah marking. Susunan track pastinya ikuti arahan Zulfikar di sequence master.
+Letakkan klip hasil download dan render pada layer konten (V1 B-Roll, V2 Archieve, V3 Graphic) tepat di bawah batas marking masing-masing.
 
 ### Aturan Wajib Editing:
 1. **Snap Sesuai Marking:**
